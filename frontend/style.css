@@ -1,0 +1,168 @@
+/* --- start of CSS reset --- */
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+  box-sizing: border-box;
+  background: transparent;
+  font-family: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+a img {
+  border: none;
+}
+
+button,
+a {
+  cursor: pointer;
+  color: inherit;
+}
+
+textarea {
+  resize: none;
+}
+
+button,
+textarea,
+select {
+  appearance: none !important;
+  border-radius: 0;
+}
+
+/* --- end of CSS reset --- */
+
+#root {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+body {
+  background-color: #ffeedf;
+  color: #145434;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+/* HEADER */
+
+.header-div {
+  width: 100%;
+  height: 60px;
+  position: relative;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: #145434 1.5px solid;
+  box-sizing: border-box;
+}
+
+.page-title {
+  font-weight: bold;
+  font-size: 36px;
+  padding-left: 10px;
+}
+
+span {
+  padding-right: 10px;
+}
+
+/* CARDS */
+
+.beers-container {
+  max-width: 1200px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  margin-top: 50px;
+}
+
+.beer-card {
+  position: relative;
+  background-color: #145434;
+  color: #ffeedf;
+  max-width: 390px;
+  min-width: 300px;
+  width: 100%;
+  padding: 30px;
+  margin: 0 40px;
+}
+
+.beer-id-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffeedf;
+  color: #145434;
+  border: #145434 2px solid;
+  font-size: 24px;
+  position: absolute;
+  top: -20px;
+  left: -20px;
+}
+
+.beer-id {
+  text-align: center;
+}
+
+.beer-name {
+  font-size: 36px;
+  font-weight: 400;
+  min-height: 100px;
+  margin-bottom: 5px;
+  border-bottom: #ffeedf 1px solid;
+}
+
+.beer-sub {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.beer-text {
+  font-size: 18px;
+  font-weight: bold;
+  padding-bottom: 30px;
+}
+
+.beer-details {
+  width: 200px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  background-color: #ffeedf;
+  color: #145434;
+  border: #145434 solid 2px;
+  position: absolute;
+  right: -10px;
+  bottom: -10px;
+  font-weight: 700;
+}
+
+.beer-details:hover {
+  background-color: #145434;
+  color: #ffeedf;
+  border: #ffeedf solid 2px;
+}
+
+.beer-details > span {
+  position: absolute;
+  right: 0;
+  font-size: 36px;
+}
